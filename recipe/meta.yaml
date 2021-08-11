@@ -1,4 +1,4 @@
-{% set version = '0.1.2' %}
+{% set version = "0.2.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsUtil_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsUtil/spsUtil_{{ version }}.tar.gz
-  sha256: 3c529e32150e1e375f7ed26eaf50d369b846ef1b1285cece46b4bbf56da23e1a
+  sha256: 6554d01b31e3083c3fcf0d67d7d651cde2bb3a499c7100a8e4800ad6a6233de9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -52,13 +52,11 @@ test:
 about:
   home: https://github.com/lz100/spsUtil
   license: GPL-3.0-or-later
-  summary: The systemPipeShiny (SPS) framework comes with many useful utility functions. However,
-    installing the whole framework is heavy and takes some time. If you like only a
-    few useful utility functions from SPS, install this package is enough.
+  summary: The systemPipeShiny (SPS) framework comes with many useful utility functions. However, installing the whole framework is heavy and takes some time. If you like only a few useful utility functions from SPS, install this package is enough.
 
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 
 extra:
