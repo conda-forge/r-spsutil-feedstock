@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsUtil_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsUtil/spsUtil_{{ version }}.tar.gz
-  sha256: 7b780830bfa81bae364928e9f460e79bb900ba76d9af97d77de7214c1275c47c
+  sha256: 86b60f4717b418e32a834949aa959d1cd633ad9794b4f0545377e75797f811c2
 
 build:
   merge_build_host: true  # [win]
