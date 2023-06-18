@@ -1,11 +1,11 @@
-About r-spsutil
-===============
+About r-spsutil-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spsutil-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lz100/spsUtil
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spsutil-feedstock/blob/main/LICENSE.txt)
 
 Summary: The systemPipeShiny (SPS) framework comes with many useful utility functions. However, installing the whole framework is heavy and takes some time. If you like only a few useful utility functions from SPS, install this package is enough.
 
