@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.2.2.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spsUtil_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spsUtil/spsUtil_{{ version }}.tar.gz
-  sha256: 86b60f4717b418e32a834949aa959d1cd633ad9794b4f0545377e75797f811c2
+  sha256: 1247f628571c046805c9b0e4acf4bd5c25fa8312974085483c1422a5e46a7b8a
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
